@@ -15,7 +15,7 @@ export default function Nav() {
     <nav className="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
       <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
         <NavLink to="/" className="font-semibold text-lg tracking-tight">
-          Joe Kafka
+          Joe Klafka
         </NavLink>
         <div className="flex items-center gap-6">
           <ul className="flex gap-6 text-sm">
