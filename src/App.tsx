@@ -1,6 +1,7 @@
 import { useState, useEffect, createContext, useContext } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
+import ThemeBackground from './components/ThemeBackground'
 import Home from './pages/Home'
 import Resume from './pages/Resume'
 import Tools from './pages/Tools'
@@ -35,7 +36,8 @@ export default function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100">
+      <ThemeBackground />
+      <div className="min-h-screen text-neutral-900 dark:text-neutral-100">
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />

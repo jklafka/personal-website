@@ -12,7 +12,7 @@ export default function Nav() {
   const { theme, toggleTheme } = useTheme()
 
   return (
-    <nav className="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
+    <nav className="border-b border-white/30 dark:border-white/10 bg-white/70 dark:bg-black/40 backdrop-blur-md">
       <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
         <NavLink to="/" className="font-semibold text-lg tracking-tight">
           Joe Klafka
