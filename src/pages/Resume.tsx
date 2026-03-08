@@ -107,14 +107,8 @@ const skills: SkillCategory[] = [
 export default function Resume() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-14">
-      <div className="flex items-baseline justify-between mb-10">
+      <div className="mb-10">
         <h1 className="text-3xl font-bold tracking-tight">Resume</h1>
-        <a
-          href="/resume.pdf"
-          className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          Download PDF
-        </a>
       </div>
 
       <section className="mb-10">
