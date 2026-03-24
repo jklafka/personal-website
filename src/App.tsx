@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Resume from './pages/Resume'
 import Tools from './pages/Tools'
 import Bits from './pages/Bits'
+import PomodoroTimer from './pages/PomodoroTimer'
 
 type Theme = 'dark' | 'light'
 
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/bits" element={<Bits />} />
+          <Route path="/tools/pomodoro" element={<PomodoroTimer />} />
         </Routes>
       </div>
     </ThemeContext.Provider>
