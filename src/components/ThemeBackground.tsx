@@ -104,49 +104,70 @@ export default function ThemeBackground() {
           />
         ))}
 
-        {/* Mars-like rocky planet */}
+        {/* Moon */}
         <div
           className="absolute rounded-full"
           style={{
-            width: 88,
-            height: 88,
-            top: '11%',
-            right: '9%',
-            background:
-              'radial-gradient(circle at 33% 28%, #e8835a, #c25430, #7a2e15)',
-            boxShadow:
-              '0 0 28px rgba(194, 84, 48, 0.35), inset -18px -12px 32px rgba(0,0,0,0.55)',
-          }}
-        />
-
-        {/* Small moon near Mars */}
-        <div
-          className="absolute rounded-full"
-          style={{
-            width: 16,
-            height: 16,
+            width: 140,
+            height: 140,
             top: '7%',
-            right: '17%',
+            right: '7%',
             background:
-              'radial-gradient(circle at 38% 33%, #d0d0d0, #8a8a8a, #505050)',
-            boxShadow: 'inset -4px -3px 7px rgba(0,0,0,0.55)',
-          }}
-        />
-
-        {/* Neptune-like ice giant */}
-        <div
-          className="absolute rounded-full"
-          style={{
-            width: 58,
-            height: 58,
-            bottom: '17%',
-            left: '5%',
-            background:
-              'radial-gradient(circle at 35% 28%, #7ec8e8, #3a7fc1, #18346e)',
+              'radial-gradient(circle at 38% 32%, #e8e8e0, #c0bfb0, #8a8878, #5a5a50)',
             boxShadow:
-              '0 0 24px rgba(58, 127, 193, 0.4), inset -12px -9px 22px rgba(0,0,0,0.45)',
+              '0 0 40px rgba(220, 220, 200, 0.18), 0 0 80px rgba(200, 200, 180, 0.08), inset -28px -20px 48px rgba(0,0,0,0.5)',
+            overflow: 'hidden',
+            position: 'absolute',
           }}
-        />
+        >
+          {/* Crater 1 — large, upper left */}
+          <div style={{
+            position: 'absolute', borderRadius: '50%',
+            width: 34, height: 34, top: 20, left: 18,
+            background: 'radial-gradient(circle at 40% 35%, #b8b7a8, #9a9888)',
+            boxShadow: 'inset 3px 3px 8px rgba(0,0,0,0.45), inset -1px -1px 3px rgba(255,255,255,0.12)',
+          }} />
+          {/* Crater 2 — medium, right side */}
+          <div style={{
+            position: 'absolute', borderRadius: '50%',
+            width: 22, height: 22, top: 52, left: 90,
+            background: 'radial-gradient(circle at 38% 33%, #c0bfb0, #9a9888)',
+            boxShadow: 'inset 2px 2px 6px rgba(0,0,0,0.4), inset -1px -1px 2px rgba(255,255,255,0.1)',
+          }} />
+          {/* Crater 3 — small, lower center */}
+          <div style={{
+            position: 'absolute', borderRadius: '50%',
+            width: 14, height: 14, top: 90, left: 58,
+            background: 'radial-gradient(circle at 40% 35%, #b0afa0, #929080)',
+            boxShadow: 'inset 2px 2px 5px rgba(0,0,0,0.4)',
+          }} />
+          {/* Crater 4 — small, lower left */}
+          <div style={{
+            position: 'absolute', borderRadius: '50%',
+            width: 18, height: 18, top: 100, left: 28,
+            background: 'radial-gradient(circle at 38% 33%, #b8b7a8, #9c9a8a)',
+            boxShadow: 'inset 2px 2px 6px rgba(0,0,0,0.38)',
+          }} />
+          {/* Crater 5 — tiny, upper right */}
+          <div style={{
+            position: 'absolute', borderRadius: '50%',
+            width: 10, height: 10, top: 30, left: 100,
+            background: 'radial-gradient(circle at 38% 33%, #c8c7b8, #a8a798)',
+            boxShadow: 'inset 1px 1px 4px rgba(0,0,0,0.35)',
+          }} />
+          {/* Mare (dark patch) — lower right area */}
+          <div style={{
+            position: 'absolute', borderRadius: '50%',
+            width: 48, height: 36, top: 78, left: 72,
+            background: 'rgba(60,58,50,0.22)',
+          }} />
+          {/* Mare (dark patch) — upper center */}
+          <div style={{
+            position: 'absolute', borderRadius: '50%',
+            width: 30, height: 22, top: 38, left: 52,
+            background: 'rgba(55,53,45,0.18)',
+          }} />
+        </div>
 
         {/* Distant tiny star cluster (brightest stars slightly larger) */}
         {[
