@@ -16,7 +16,7 @@ export default function Home() {
         </Link>
         <Link
           to="/tools"
-          className="px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg text-sm font-medium hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+          className="px-4 py-2 border border-neutral-400 dark:border-neutral-700 rounded-lg text-sm font-medium bg-white/60 dark:bg-transparent hover:bg-white/80 dark:hover:bg-neutral-800 transition-colors"
         >
           My Tools
         </Link>
