@@ -43,8 +43,10 @@ export default function PomodoroTimer() {
   // Track mode in a ref so the interval callback can read the latest value
   const modeRef = useRef<Mode>(mode)
   const pomodorosRef = useRef(pomodorosCompleted)
-  modeRef.current = mode
-  pomodorosRef.current = pomodorosCompleted
+  useEffect(() => {
+    modeRef.current = mode
+    pomodorosRef.current = pomodorosCompleted
+  }, [mode, pomodorosCompleted])
 
   function clearTimer() {
     if (intervalRef.current !== null) {

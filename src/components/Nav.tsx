@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { useTheme } from '../App'
+import { useTheme } from '../theme'
 
 const links = [
   { to: '/', label: 'Home' },

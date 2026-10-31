@@ -23,7 +23,7 @@ React 19 + TypeScript personal portfolio site, built with Vite, styled with Tail
 - `/tools` → `src/pages/Tools.tsx`
 - `/bits` → `src/pages/Bits.tsx`
 
-**Theme (dark/light mode)** is managed via `ThemeContext` in `App.tsx`, toggled through `<Nav>`, and applied by adding/removing a `dark` class on `document.documentElement`. The dark variant is defined as a custom Tailwind variant in `src/index.css`.
+**Theme (dark/light mode)** is defined by `ThemeContext` in `src/theme.ts`, its state is held in `App.tsx`, and it is toggled through `<Nav>`, and applied by adding/removing a `dark` class on `document.documentElement`. The dark variant is defined as a custom Tailwind variant in `src/index.css`.
 
 **Animated background** is rendered by `src/components/ThemeBackground.tsx`, which renders a fixed, full-screen background behind all content (`-z-10`). In dark mode it shows a deep space scene (stars, planets, CSS animations). In light mode it shows a daytime sky (sun, animated clouds). CSS keyframes for these animations (`twinkle`, `cloud-float`, `sun-pulse`) live in `src/index.css`.
 
