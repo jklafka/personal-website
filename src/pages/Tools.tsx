@@ -33,6 +33,12 @@ const tools: Tool[] = [
     route: '/tools/pomodoro',
     category: 'Productivity',
   },
+  {
+    name: 'Stardust',
+    description: 'A 2048-style merging game with space and plant themes.',
+    url: 'https://stardust.jklafka.cloud',
+    category: 'Games',
+  },
 ]
 
 const categories = [...new Set(tools.map((t) => t.category))]
