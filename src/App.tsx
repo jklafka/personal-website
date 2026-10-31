@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext, useContext } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import ThemeBackground from './components/ThemeBackground'
@@ -7,22 +7,7 @@ import Resume from './pages/Resume'
 import Tools from './pages/Tools'
 import Bits from './pages/Bits'
 import PomodoroTimer from './pages/PomodoroTimer'
-
-type Theme = 'dark' | 'light'
-
-interface ThemeContextValue {
-  theme: Theme
-  toggleTheme: () => void
-}
-
-export const ThemeContext = createContext<ThemeContextValue>({
-  theme: 'dark',
-  toggleTheme: () => {},
-})
-
-export function useTheme() {
-  return useContext(ThemeContext)
-}
+import { ThemeContext, type Theme } from './theme'
 
 export default function App() {
   const [theme, setTheme] = useState<Theme>('dark')

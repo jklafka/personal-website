@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { useTheme } from '../App'
+import { useTheme } from '../theme'
 
 const STAR_COUNT = 200
 
