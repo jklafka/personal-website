@@ -10,24 +10,6 @@ type Tool = {
 
 const tools: Tool[] = [
   {
-    name: 'Bun',
-    description: 'Fast all-in-one JavaScript runtime and toolkit.',
-    url: 'https://bun.sh',
-    category: 'Runtime',
-  },
-  {
-    name: 'Vite',
-    description: 'Lightning fast build tool for modern web projects.',
-    url: 'https://vite.dev',
-    category: 'Build',
-  },
-  {
-    name: 'Neovim',
-    description: 'Hyperextensible vim-based text editor.',
-    url: 'https://neovim.io',
-    category: 'Editor',
-  },
-  {
     name: 'Pomodoro Timer',
     description: 'Stay focused with timed work and break sessions.',
     route: '/tools/pomodoro',
